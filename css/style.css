@@ -1,0 +1,590 @@
+*{
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+outline: none;
+}
+html,body{
+	height: 100%;
+}
+.fon{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+ 	background : url("../img/fon2.jpg") center no-repeat ;
+ 	background-size: cover;
+}
+.page{
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+	color: #FD0135FF;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/* Стили для header*/
+
+header{
+	float: left;
+	padding: 5px;
+	min-height: 50px;
+	width: 100%;
+	border-bottom: 2px solid #D23;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.divTitle{
+	margin: 10px 0 0 5px;
+}
+.title{
+	font-size: 1.5em;
+	color: #BC290FFF;
+}
+.title7{
+	font-size: 1.6em;
+	color: #FF001BFF;
+}
+
+header div.divMenu{
+	margin: 5px;
+}
+header div.divMenu span.menu{
+	display: inline-block;
+	padding: 5px 15px;
+	border-bottom-right-radius: 10px;
+	opacity: 0.7;
+	background-color: #ECA;
+	border: 1px solid #FFF;
+	color: black;
+	width: 180px;
+ 	text-align: center;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	-ms-box-sizing: border-box;
+ 	box-sizing: border-box;
+}
+span.menu a{
+	color: #000;
+}
+span.menu a:hover{
+	color: #FFF;
+}
+
+
+
+/*///////////////////*/
+
+/*Стили для контента */
+div.wraper{
+	float: left;
+	width: 100%;
+	background-color: #DEF;
+	opacity: 0.9;
+}
+div#content{
+	float: left;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-column-gap: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+	border-bottom: 2px solid #D23
+}
+/*Стили для контента sirch*/
+
+div.sirch{
+	float: left;
+	width: 100%;
+	min-height: 20px;
+	border-bottom: 1px solid #fff;
+}
+
+div.sirch div form{
+	padding: 10px;
+	margin-bottom: 10px
+}
+div.sirch div form input{
+	display: inline-block;
+	width: 250px;
+	margin-right: 20px;
+	border: 1px solid #FB4603FF;
+	height: 20px;
+}
+div.sirch div button{
+	display: inline-block;
+	padding: 3px 10px;
+	border: 1px solid #FB4603FF;
+	background-color: #DEF;
+	opacity: 0.9;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+
+
+	
+/*Стили для article*/
+article{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 15px
+}
+
+article .tekstConten{
+	float: left;
+	width: 100%;
+	grid-template-columns: 1fr;
+	margin-left: 10px;
+	margin-top: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+article .tekstConten div span p{
+	line-height: 145%;
+	font-style: oblique;
+	font-size: 1em;
+}
+article .tekstConten div{
+	width: 85%;
+}
+article div.textContentQuestion{
+	padding: 35px 0;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+div.textContentQuestion span{
+	display: block;
+	text-align: center;
+	font-size: 1.6em;
+	font-style: oblique;
+	font-weight: 900;
+	letter-spacing: 3px;
+	text-shadow: -1px -1px 0 #fff, 1px 1px 0 #fff, 
+	-1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 7px #ca7;
+}
+div.textContentQuestion span a{
+	color: #FD0135FF;
+}
+article div.viviska {
+	margin-bottom: 7px;
+}
+
+article .spisokReceptov{
+	float: left;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+	grid-gap: 8px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+article .spisokReceptov div{
+	background-color: #9BF;
+	border: 1px solid #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 40px 8px 40px 8px;
+	overflow: hidden;
+}
+article .spisokReceptov div:hover{
+	background-color: #05F;
+}
+article .spisokReceptov img{
+	float: left;
+	width: auto;
+	border-radius: 40px 8px 0px 23px;
+}
+article .spisokReceptov span{
+	float: left;
+	display: block;
+	padding: 3px;
+	color: black;
+	height: 24px;
+	text-overflow: clip;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 1em;
+	width: 100%;
+	font-size: 300;
+}
+
+article div.allRecept{
+	float: left;
+    padding: 0 10px ;
+    margin-bottom: 30px;
+}
+article div.allRecept a{
+	color: #FD0135FF;
+	font-size: 1em;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+article div.silkiReceptov{
+	float: left;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	box-sizing: border-box;
+	padding: 0 10px;
+	grid-column-gap: 5%;
+	margin-bottom: 35px;
+}
+article div.silkiReceptov p.h{
+	color: #009311FF;
+	font-weight: 800;
+	text-indent: 15px;
+	font-size: 0.95em;
+	line-height: 120%;
+}
+article div.silkiReceptov span {
+	font-size: 0.9em;
+	line-height: 120%;
+}
+article div.silkiReceptov a {
+	font-size: 0.9em;
+	font-weight: 300;
+	text-decoration: underline;
+	line-height: 120%;
+}
+article div.silkiReceptov a:hover {
+	color: #B7004FFF;
+}
+
+/*Стили для aside*/
+aside{
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+	margin-bottom: 50px;
+}
+div.sopisok{
+	position: relative;
+	margin: 15px;
+	width: calc(100% - 30px);
+	float: left;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+div.sopisok div{
+	background-color: #fff;
+	border-radius: 4px;
+}
+div.sopisok div:hover{
+	background-color: #DDD;
+}
+div.sopisok div span{
+	display: block;
+	text-align: center;
+	padding: 2px;
+	box-sizing: border-box;
+	font-size: 0.8em;
+}
+div.sopisok div span a{
+	color: black;
+	font-weight: 900;
+}
+aside div.viviska{
+	float: left;
+	width: 100%;
+	padding: 7px;
+	background-color: #3AC;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 80px;
+}
+
+aside div.imgSpisok{
+	float: left;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 3px;
+	grid-auto-rows: minmax(10px,auto);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.imgSpisok img{
+	float: left;
+}
+
+/*//////////////////*/
+/*Стили для footer*/
+footer{
+	float: left;
+	width: 100%;
+}
+footer div.knopki{
+	float: right;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+footer div.knopki div{
+	margin-right: 3px;
+	margin-top: 8px;
+	display: inline-block;
+	width: 200px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	border-bottom-right-radius:7px;
+}
+footer div.knopki div span{
+	display: block;
+	text-align: center;
+	font-size: 0.9em;
+	padding: 7px;
+}
+footer div.knopki div span a{
+	color: #000;
+}
+footer div.knopki div span a:hover {
+	color: #FFF;
+}
+
+footer div.footer{
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+}
+footer div.footer span{
+	display: block;
+	text-align: center;
+}
+
+/*////////////////////////*/
+/*Адаптивность сайта*/
+/*
+@media (min-width: 1200px) {
+#wrapper #articles article{
+	width:31.3333%;
+}
+}*/
+
+@media (max-width: 1000px) {
+.page{
+	width: 100%;
+}
+
+article img{
+	width: 100%;
+}
+
+div#content{
+	grid-template-columns: 1fr;	
+	width: 85%;
+	margin-left: 7.5%;
+}
+aside div.sopisok{
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-row-gap: 5px;
+	grid-column-gap: 4%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+aside div.viviska{
+	float: left;
+	
+}
+
+aside div.imgSpisok{
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+	padding-left: 4px;
+}
+aside div.imgSpisok img{
+	width: 97%;
+	height: auto;
+}
+}
+/************************/
+
+@media (max-width: 850px) {
+header div.divMenu span.menu{
+	display:block;
+}
+header div.divMenu span.menu.hiden{
+	display: none;
+}
+article .spisokReceptov{
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+aside div.sopisok{
+	grid-template-columns: 1fr 1fr 1fr ;
+
+}
+footer div.knopki div{
+	display: block;
+}
+.silkiReceptov{
+	font-size: 1.4em !important;
+}
+}
+
+/************************/
+
+@media (max-width: 550px) {
+.page{
+	width: 100%;
+}
+
+article img{
+	width: 100%;
+}
+
+div#content{
+	grid-template-columns: 1fr;	
+	width: 85%;
+	margin-left: 7.5%;
+}
+article .spisokReceptov{
+	grid-template-columns: 1fr 1fr 1fr ;
+}
+aside div.sopisok{
+	grid-template-columns: 1fr 1fr;
+}
+
+aside div.viviska{
+	float: left;
+	
+}
+
+aside div.imgSpisok{
+	grid-template-columns: 1fr 1fr 1fr 1fr  ;
+	padding-left: 4px;
+}
+aside div.imgSpisok img{
+	width: 97%;
+	height: auto;
+}
+}
+
+
+/**********************************/
+@media (max-width: 400px) {
+.page{
+	width: 100%;
+}
+
+article img{
+	width: 100%;
+}
+
+div#content{
+	grid-template-columns: 1fr;	
+	width: 85%;
+	margin-left: 7.5%;
+}
+article .spisokReceptov{
+	grid-template-columns: 1fr 1fr  ;
+}
+article div.silkiReceptov{
+	grid-template-columns: 1fr ;
+	font-size: 0.5em;
+}
+aside div.sopisok{
+	grid-template-columns: 1fr;
+}
+
+aside div.viviska{
+	float: left;
+	
+}
+
+aside div.imgSpisok{
+	grid-template-columns: 1fr 1fr 1fr 1fr  ;
+	padding-left: 4px;
+}
+aside div.imgSpisok img{
+	width: 97%;
+	height: auto;
+}
+}
+
+
+
+
+/* Syle for contactForm.php */
+
+div.contactForm{
+	position: relative;
+	margin: 0 auto;
+	padding-left: 10%;
+	padding-right: 10%;
+	width:50%;
+	background-color: silver;
+	border-radius: 10px;
+	margin-top: 10%;
+	margin-bottom: 15%;
+}
+div.contactForm form{
+	padding: 5% 0 5% 0;
+}
+
+
+/* @media (max-width: 1000px) {
+ */
+
+@media (max-width: 850px) {
+	div.contactForm{
+		padding: 3%;
+		width:100%;
+		border-radius: 10px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		box-sizing: border-box;
+	}
+	.text-center{
+		float: left;
+		width: 100%;
+	}
+}
+
+
+/************************/
+
+/* @media (max-width: 550px) { */

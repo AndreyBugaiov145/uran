@@ -1,0 +1,100 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+#test{
+	color: green;
+	float: left;
+}
+
+html{
+
+	background: #afafaf;
+}
+
+.position{
+	float: left;
+	margin: 20px;
+	background: green;
+	border-radius: 8px;	
+	padding: 5px;
+	line-height: 150%;
+
+}
+
+.position1{
+	float: right;
+	background: red;
+	border-radius: 8px;
+}
+
+.content{
+	display: block;
+}
+.nocontent{
+	display: block !important;
+}
+
+ul{
+	list-style-type: none;
+}
+
+
+#block{
+	background: green;
+	height: 150px;
+	padding:  10px;
+	line-height: 200%;
+	border-radius:  15px;
+	width: 40%;
+}
+#calculeter{
+	position: relative;
+	left: 250px;
+	top: 250px;
+	background: #fff;
+	width: 400px;
+	height: 600px;
+	border-radius: 5px;
+	overflow: hidden;	
+}
+#otvet{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 20%;
+	background: #abfbfb;
+}
+.knopka{
+	padding: 8px;
+	position: relative;
+	margin: 10px;
+	float: left;
+	background: #afafaf;
+	height: 50px;
+	width: 50px;
+	border: 2px solid black;
+	border-radius: 3px;
+	font-size: 2em;
+}
+#otvet1{
+	position: absolute;
+	top: 0px;
+	left: 5px;
+}
+
+img{
+	height: 200px;
+	width: auto;
+}
+
+#forma{
+	float: left;
+	border: 3px solid blue;
+	background: #fff; 
+}
+#forma input {
+	float: right;
+}

@@ -1,0 +1,443 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background-color: #EDEDEDFF;
+}
+
+div.page{
+	background-color: #fff;
+	width: 1200px;
+	margin: 0 auto;
+	//border: 1px solid green;
+	height: 100%;
+	box-sizing: border-box;
+
+	header{
+		float: left;
+		width: 100%;
+		div{
+			float: left;
+			width: 100%;
+		}
+		div.previy{
+			padding: 10px;
+			box-sizing: border-box;
+			text-align: center;
+			background-color: #C4C4C4FF;
+			span{
+				color:#560093FF;
+				font-size: 3em;
+				font-style: oblique;
+			    font-weight: 900;
+			    letter-spacing: 3px;
+			    text-shadow: 3px -3px 2px #fff;
+			}
+		}
+		div.imglist{
+			float: left;
+			height:100%;
+			position: relative;
+			div.imgFlex{
+				scroll-behavior: smooth;
+				overflow: hidden;
+				display: flex;
+				//float: left;
+				div>div{
+				position: relative;
+				width: 400px;
+				height: 200px;
+				background : url("../img/4.png") center no-repeat ;
+ 				background-size: cover;
+	 				span{
+	 					position: absolute;
+	 					bottom: 20px;
+	 					left: 50px;
+	 					font-size: 30px;
+	 					color:#DE1;
+	 					font-weight: 800;
+	 				}
+				}
+			}
+			div.flexSpan{
+				display: flex;
+				flex-direction:row;
+				position: absolute;
+				font-size: 3em;
+				z-index: 1;
+				align-items: center;
+				justify-content: space-between;
+				box-sizing: border-box;
+				margin-right: 20px;
+				height: 100%;
+				span:nth-child(1) {
+					width: 50px;
+					&:after ,&:before {
+ 						content: "";
+ 						display: block;
+ 						height: 5px;
+ 						width: 100%;
+ 						background-color: silver;
+ 						transform: rotate(45deg);
+ 						cursor: pointer;
+ 					}
+ 					&:after  {
+ 						transform: rotate(45deg);
+ 						position: relative;
+ 						top: 13px;
+ 					}
+ 					&:before {
+ 						transform: rotate(-45deg);
+ 						position: relative;
+ 						top: -14px;
+ 					}
+ 					&:hover:after,&:hover:before,{
+ 						background-color: #fff;
+ 					}
+				}
+				span:nth-child(2) {
+					width: 50px;
+					&:after ,&:before {
+ 						content: "";
+ 						display: block;
+ 						height: 5px;
+ 						width: 100%;
+ 						background-color: silver;
+ 						transform: rotate(45deg);
+ 						cursor: pointer;
+ 					}
+ 					&:hover:after,&:hover:before,{
+ 						background-color: #fff;
+ 					}
+ 					&:after  {
+ 						transform: rotate(-45deg);
+ 						position: relative;
+ 						top: 15px;
+
+ 					}
+ 					&:before {
+ 						transform: rotate(45deg);
+ 						position: relative;
+ 						top: -14px;
+ 					}
+				}
+			}
+		}
+	}
+
+	article{
+		float: left;
+		width: 100%;
+		div.menuFlex{
+			width: 100%;
+			float: left;
+			display: flex;
+			justify-content: space-around;
+			height: 50px;
+			align-items: center;
+			background-color: #D8D8D8FF;
+			span{
+				display: block;
+				flex-basis: 33.3333%;
+				font-size: 1.3em;
+				text-align: center;
+				height: 100%;
+				padding: 10px;
+				box-sizing: border-box;
+				background-color: #D8D8D8FF;
+			}
+			span:nth-child(2){
+				border-right:1px solid silver ;
+				border-left:1px solid silver ;
+			}
+			.selectArticle{
+				background-color: #fff;
+			}
+		}
+	}
+	div.grid{
+		margin-top: 10px;
+		width: 100%;	
+		float: left;
+		display: grid;
+		grid-template-columns:1fr 1fr ;
+		grid-auto-rows : minmax(250px,auto);
+		box-sizing: border-box;
+		grid-gap:10px;
+		margin-bottom: 10px;
+		/*.box{
+			//border: 1px solid red;
+			box-sizing: border-box;
+			box-shadow: 5px 5px 3px;
+			text-indent: 20px;
+			img{
+				width: 100%;
+				height: 300px;
+				float: left;
+			}
+			span{
+				word-spacing: 2px;
+				line-height: 110%;
+				display: block;
+				margin: 5px;
+				float: left;
+				&:first-letter{
+					text-transform: uppercase;
+					color:red;
+					font-size: 1.3em;
+				}
+			}
+		}*/
+		.boxall{
+			position: relative;
+			grid-column: 1/3;
+			background:transparent url('../img/1.jpg')  top no-repeat;
+			background-size: cover;
+			text-indent: 20px;
+			span{
+				position: absolute;
+				bottom: 5px;
+				float: left;
+				margin: 10px;
+				line-height: 150%;
+				word-spacing: 3px;
+				font-size: 1.5em;
+				font-style: italic;
+				&:first-letter{
+					text-transform: uppercase;
+					color:red;
+					font-size: 2em;
+				}
+			}
+		}
+	}
+	div#content{
+		//display: none;
+		box-sizing: border-box;
+		width: 100%;
+		div.grid{
+			margin-top: 10px;
+			width: 100%;	
+			float: left;
+			display: grid;
+			grid-template-columns:1fr 1fr ;
+			grid-auto-rows : minmax(250px,auto);
+			box-sizing: border-box;
+			grid-gap:10px;
+			margin-bottom: 10px;
+			img{
+					width: 100%;
+					height: 300px;
+					float: left;
+				}
+			.box{
+				background-color: #fff;
+				//border: 1px solid red;
+				box-sizing: border-box;
+				box-shadow: 5px 5px 3px;
+				text-indent: 20px;
+				position: relative;
+				
+				span{
+					word-spacing: 2px;
+					line-height: 110%;
+					display: block;
+					margin: 5px;
+					float: left;
+					&:first-letter{
+						text-transform: uppercase;
+						color:red;
+						font-size: 1.3em;
+					}
+				}
+				.spanBoxall{
+					position: absolute;
+					bottom: 5px;
+					float: left;
+					margin: 10px;
+					line-height: 150%;
+					word-spacing: 3px;
+					font-size: 1.5em;
+					font-style: italic;
+					&:first-letter{
+						text-transform: uppercase;
+						color:red;
+						font-size: 2em;
+					}
+				}
+			}
+			.boxall{
+				position: relative;
+				grid-column: 1/3;
+				background:transparent url('../img/1.jpg')  left ;
+				background-size: contain;
+				text-indent: 20px;
+				span , .spanBoxall{
+					position: absolute;
+					bottom: 5px;
+					float: left;
+					margin: 10px;
+					line-height: 150%;
+					word-spacing: 3px;
+					font-size: 1.5em;
+					font-style: italic;
+					&:first-letter{
+						text-transform: uppercase;
+						color:red;
+						font-size: 2em;
+					}
+				}
+			}
+		}
+		div.comentariy{
+			float: left;
+			width: 100%;
+			background-color: #AED4DFFF;
+			padding: 10px;
+			box-sizing: border-box;
+			>span{
+				display: block;
+				text-align: center;
+				height: 30px;
+				font-size: 1.5em;
+				margin-bottom: 10px;
+			}
+			div.coment{
+				width: 50%;
+
+			}
+			div.comentFlex{
+				margin-bottom: 10px;
+				padding: 10px;
+				box-sizing: border-box;
+				width: 100%;
+				background-color: #FFFFFFFF;
+				float: left;
+				text-align: auto;
+				min-height: 80px;
+				border: 1px solid silver;
+				border-radius: 10px;
+				span{
+					display: block;
+					font-size: 1.3em;
+				}
+				div{
+					width: 100%;
+					border-top: 1px solid silver;
+					float: left;
+					text-indent: 15px;
+					padding-top: 5px;
+					box-sizing: border-box;
+					span{
+						font-size: 1.1em;
+						&:first-letter{
+							text-transform: uppercase;
+						}
+					}
+				}
+			}
+		}
+	}
+	div.newBockmenu{
+		min-height: 800px;
+		display: none;
+		float: left;
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		line-height: 150%;
+		font-size: 1.2em;
+		>div{
+			margin: 0 auto;
+			>span{
+				float: left;
+				border-bottom: 1px solid silver;
+				//display: block;
+				font-size: 1.4em;
+				font-style: italic;
+				margin: 15px;
+			}
+		}
+		textarea{
+			box-sizing: border-box;
+			font-size: 1em;
+
+			&:focus{
+				margin-bottom: calc(0px - 2px);
+				box-sizing: border-box;
+				border: 2px solid #8E9FFFFF
+			}
+		}
+	}
+	div.newComent{
+		min-height: 800px;
+		float: left;
+		padding: 20px;
+		display: none;
+		>span{
+				float: left;
+				border-bottom: 1px solid silver;
+				//display: block;
+				font-size: 1.4em;
+				font-style: italic;
+				margin: 15px;
+			}
+		input{
+			margin-bottom: 20px;
+			font-size: 1em;
+			padding: 5px;
+			box-sizing: border-box;
+			&:focus{
+				border: 2px solid #8E9FFFFF
+			}
+		}
+		textarea{
+			display: block;
+			padding: 5px;
+			line-height: 110%;
+			word-spacing: 2px;
+			border-radius: 5px;
+			font-size: 1.3em;
+			&:focus{
+				margin-bottom: calc(0px - 2px);
+				border: 2px solid #8E9FFFFF
+			}
+		}
+	}
+	button{
+		min-width: 150px;
+		height: 40px;
+		font-size: 20px;
+		padding: 3px;
+	}
+	
+}
+footer{
+	margin-top: 20px;
+	width: 100%;
+	background-color: #C4C4C4FF;
+	float: left;
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content:center;
+	span{
+		font-size: 1.7em;
+		font-style: italic;
+	}
+
+}

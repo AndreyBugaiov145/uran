@@ -1,0 +1,225 @@
+*{
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+outline: none;
+}
+html,body{
+	height: 100%;
+}
+.fon{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+ 	background : url("img/fon.jpg");
+}
+.page{
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/* Стили для header*/
+
+header{
+	float: left;
+	padding: 5px;
+	min-height: 50px;
+	width: 100%;
+	border-bottom: 2px solid #D23;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.divTitle{
+	margin: 10px 0 0 5px;
+}
+.title{
+	font-size: 1.5em;
+	color: #BC290FFF;
+}
+.title7{
+	font-size: 1.6em;
+	color: #FF001BFF;
+}
+
+.divMenu{
+	margin: 5px;
+}
+span.menu{
+	display: inline-block;
+	padding: 5px 15px;
+	border-bottom-right-radius: 10px;
+	opacity: 0.7;
+	background-color: #ECA;
+	border: 1px solid #FFF;
+	color: black;
+	width: 180px;
+ 	text-align: center;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	-ms-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	
+}
+span.menu a{
+	color: #000;
+}
+span.menu a:hover{
+	color: #FFF;
+}
+
+
+
+/*///////////////////*/
+
+/*Стили для контента */
+div.wraper{
+	float: left;
+	width: 100%;
+	background-color: #DEF;
+	opacity: 0.9;
+}
+div#content{
+	float: left;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-column-gap: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+/*Стили для контента sirch*/
+
+div.sirch{
+	float: left;
+	width: 100%;
+	min-height: 20px;
+	border-bottom: 1px solid #fff;
+}
+
+div.sirch div form{
+	padding: 10px;
+	margin-bottom: 10px
+}
+div.sirch div form input{
+	display: inline-block;
+	width: 250px;
+	margin-right: 20px;
+	border: 1px solid #FB4603FF;
+	height: 20px;
+}
+div.sirch div button{
+	display: inline-block;
+	padding: 3px 10px;
+	border: 1px solid #FB4603FF;
+	background-color: #DEF;
+	opacity: 0.9;
+	margin-right: 20px;
+	cursor: help;
+}
+
+
+
+	
+/*Стили для article*/
+article{
+	min-height: 500px;
+	border: 1px solid black;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*Стили для aside*/
+aside{
+	position: relative;
+	min-height: 500px;
+	border: 1px solid black;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+	margin-bottom: 50px;
+}
+div.sopisok{
+	position: relative;
+	margin: 15px;
+	width: calc(100% - 30px);
+	float: left;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+div.sopisok div{
+	background-color: #fff;
+	border-radius: 4px;
+}
+div.sopisok div:hover{
+	background-color: #DDD;
+}
+div.sopisok div span{
+	display: block;
+	text-align: center;
+	padding: 2px;
+	box-sizing: border-box;
+	font-size: 0.8em;
+}
+div.sopisok div span a{
+	color: black;
+	font-weight: 900;
+}
+aside div.viviska{
+	float: left;
+	width: 100%;
+	padding: 7px;
+	background-color: #3AC;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 80px;
+}
+
+.imgSpisok{
+	float: left;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 0px;
+	grid-auto-rows: minmax(10px,auto);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.imgSpisok div {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
